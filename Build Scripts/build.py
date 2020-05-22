@@ -20,15 +20,15 @@ verbose_errors = False
 
 if platform.system() == "Windows":
 	asBinary = "AS/Win32/asw.exe";
-	s3p2binBinary = "AS/Win32/s3p2bin.exe";
+	fdp2binBinary = "AS/Win32/fdp2bin.exe";
 
 elif platform.system() == "Darwin": # Osx
 	asBinary = "AS/Osx/asl";
-	s3p2binBinary = "AS/Osx/s3p2bin";
+	fdp2binBinary = "AS/Osx/fdp2bin";
 
 elif platform.system() == "Linux":
 	asBinary = "AS/Linux/asl";
-	s3p2binBinary = "AS/Linux/s3p2bin";
+	fdp2binBinary = "AS/Linux/fdp2bin";
 
 else:
 	print("Unknown platform")
@@ -108,7 +108,7 @@ def build(targetName, def0, def1, accurate):
 
 	# Create binary
 
-	binaryCommand = [s3p2binBinary, "sonic3k.p", romPath, "sonic3k.h"];
+	binaryCommand = [fdp2binBinary, "sonic3k.p", romPath, "sonic3k.h"];
 
 	if accurate:
 		binaryCommand.append("-a");
@@ -125,7 +125,7 @@ def build(targetName, def0, def1, accurate):
 	if binaryProcess.returncode != 0:
 		if verbose_errors == True:
 			print(errors)
-		print("  ERROR: s3p2bin returned " + str(binaryProcess.returncode)) + "."
+		print("  ERROR: fdp2bin returned " + str(binaryProcess.returncode)) + "."
 		return binaryProcess.returncode
 
 	print("  Removing temporary files");

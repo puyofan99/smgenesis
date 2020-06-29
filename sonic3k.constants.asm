@@ -1104,6 +1104,7 @@ mus_DataSelect			ds.b 1		; $2F
 mus_FinalBoss			ds.b 1		; $30
 mus_Drowning			ds.b 1		; $31
 mus_Ending			ds.b 1		; $32
+mus_CreditsK			ds.b 1		; $DC - Can also be treated as SFX?
 Mus__End =			*		; next ID after last music
 
 ; ---------------------------------------------------------------------------
@@ -1281,7 +1282,6 @@ sfx_UnknownSaw			ds.b 1		; $D8
 sfx_MagneticSpike		ds.b 1		; $D9
 sfx_LeafBlower			ds.b 1		; $DA
 sfx_WaterSkid			ds.b 1		; $DB
-mus_CreditsK			ds.b 1		; $DC - Can also be treated as SFX?
 				ds.b 3		; unused SFX slots, the driver will happily play them though
 sfx__End =			*		; next ID after the last sound effect
 

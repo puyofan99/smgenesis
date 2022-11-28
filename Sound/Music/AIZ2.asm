@@ -448,17 +448,17 @@ Mus81_GHZ_Jump05:
 
 ; DAC Data
 Mus81_GHZ_DAC:
-	dc.b	nRst, $08, dKick, dSnare, dKick, dKick, dSnare, dSnare, dSnare
+	dc.b	nRst, $08, dKickS3, dSnareS3, dKickS3, dKickS3, dSnareS3, dSnareS3, dSnareS3
 
 Mus81_GHZ_Loop00:
-	dc.b	dKick, $10, dSnare, $08, dKick, $10, $08, dSnare, $10
+	dc.b	dKickS3, $10, dSnareS3, $08, dKickS3, $10, $08, dSnareS3, $10
 	smpsLoop            $00, $07, Mus81_GHZ_Loop00
-	dc.b	dKick, $10, dSnare, $08, dKick, $10, dSnare, $08, $08, $08
+	dc.b	dKickS3, $10, dSnareS3, $08, dKickS3, $10, dSnareS3, $08, $08, $08
 
 Mus81_GHZ_Loop01:
-	dc.b	dKick, $10, dSnare, $08, dKick, $10, $08, dSnare, $10
+	dc.b	dKickS3, $10, dSnareS3, $08, dKickS3, $10, $08, dSnareS3, $10
 	smpsLoop            $00, $07, Mus81_GHZ_Loop01
-	dc.b	dKick, $10, dSnare, $08, dKick, $10, dSnare, $08, $08, $08
+	dc.b	dKickS3, $10, dSnareS3, $08, dKickS3, $10, dSnareS3, $08, $08, $08
 	smpsLoop            $01, $02, Mus81_GHZ_Loop01
 	smpsJump            Mus81_GHZ_Loop01
 

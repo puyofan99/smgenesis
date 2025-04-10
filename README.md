@@ -1,1 +1,3 @@
-This is a reference integration of [Flamedriver](https://github.com/flamewing/flamedriver) into S3&K. Please note I only looked into S3Complete mode, and it fails to build for S&K alone.
+A WIP homebrew port of Sonic Mania to the Mega Drive (aka the Sega Genesis). Built off of the Source Code of Sonic 3 and Knuckles.
+
+The project is indefinitely halted, however due to it's Open Source nature, anyone can contribute to it's development.
